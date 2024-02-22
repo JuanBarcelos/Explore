@@ -16,7 +16,82 @@
             <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
             <img src="./images/Logo.svg" alt="caixa de dialogo com três pontos dentro">
         </header>
-        <main></main>
+        <main>
+            <div class="top-form">
+                <legend>Informações pessoais</legend>
+            </div>
+            <form action="">
+                <fieldset>
+                    <div class="form-input-container">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="Last-name">Sobrenome</label>
+                            <input type="text" name="Last-name" id="Last-name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span>(digite um email válido)</span></label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </fieldset>
+
+                <div class="title-form">
+                    <legend>Informações do mentor</legend>
+                </div>
+
+                <fieldset>
+                    <div class="form-group ">
+                        <label for="mentor">Selecione quem foi o seu mentor</label>
+                        <select name="mentor" id="mentor">
+                            <option value="Mayke">Mayke</option>
+                            <option value="Diego">Diego</option><option value="Jakeline">Jakeline</option><option value="Fernando">Fernando</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group form-input-textarea">
+                        <label for="Feedback">Feedback sobre o mentor</label>
+                        <textarea name="Feedback" id="Feedback" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="form-group form-input-checkbox">
+                        <input type="checkbox" name="duvidas" id="duvidas">
+                        <label for="duvidas">
+                            Todas as minhas dúvidas foram esclarecidas durante a mentoria.
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="title-form">
+                    <legend>Agendando próxima mentoria</legend>
+                </div>
+
+                <fieldset>
+                    <div class="form-input-container">
+                        <div class="form-group">
+                            <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" name="date" id="date">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="first-hour">Das</label>
+                            <input type="time" name="first-hour" id="first-hour">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="second-hour">Até</label>
+                            <input type="time" name="second-hour" id="second-hour">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Salvar</button>
+            </form>
+        </main>
         <footer></footer>
     </div>
 </body>
