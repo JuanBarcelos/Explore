@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+header{
+    background-color: #065E7C;
+    padding-block: 1.6rem;
+}
+
+.container{
+    width: 382px;
+    margin: 0 auto;
+}
+
+header > .container > .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.55rem;
+}
+
+header > .container > .content > img{
+    border-radius: 100%;
+    width: 4.2rem;
+    height: 4.2rem;
+}
+
+header > .container > .content > input{
+    width: 24.1rem;
+    height: 4rem;
+    
+    background-color: rgb(252, 252, 252, 20%);
+    
+    border-radius: .4rem;
+    border: none;
+
+    padding: 12px 14px;
+
+    outline: none;
+
+    line-height: 100%;
+    font-size: 1.6rem;
+    color: #fcfcfc;
+    font-weight: 700;
+}
+
+header > .container > .content > input::placeholder{
+    line-height: 100%;
+    font-size: 1.6rem;
+    color: #fcfcfc;
+    font-weight: 700;
+}
+
+main > img{
+    width: 100%;
+}
+
+main > .container > .content > article > .title{
+    margin-block: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+main > .container > .content > article > .title > h1,
+main > .container > .content > section > h2{
+    line-height: 160%;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #202024;
+}
+
+main > .container > .content > article > .title > .btns-likes > button{
+    background-color: #065E7C;
+
+    width: 4rem;
+    height: 4rem;
+
+    border: none;
+    border-radius: 100%;
+
+    color: #fcfcfc;
+    font-size: 1.6rem;
+}
+
+main > .container > .content > article > .title > .btns-likes > button:nth-child(1){
+    margin-right: .8rem;
+}
+
+main > .container > .content > article > .description > p{
+    line-height: 160%;
+    font-size: 1.6rem;
+    color: #121214;
+    font-weight: normal;
+}
+
+main > .container > .content > article{
+    margin-bottom: 3.2rem;
+}
+
+main > .container > .content > section > .cards{
+    margin-top: 3.2rem;
+    margin-bottom: 3.9rem;
+}
+
+main > .container > .content > section > .cards > .card{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+main > .container > .content > section > .cards > .card > img{
+    width: 100%;
+    border-radius: .5rem;
+}
+
+main > .container > .content > section > .cards > .card > .about > h3{
+    line-height: 160%;
+    font-size: 1.8rem;
+    color: #121214;
+    font-weight: bold;
+}
+
+main > .container > .content > section > .cards > .card > .about > p{
+    line-height: 160%;
+    font-size: 1.4rem;
+    color: #121214;
+    font-weight: 500;
+}
+
+footer{
+    background-color: #065E7C;
+    padding: 1.6rem;
+    text-align: center;
+}
+
+footer > .container > .content > p{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fcfcfc;
+}
