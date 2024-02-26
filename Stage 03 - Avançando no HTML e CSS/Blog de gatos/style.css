@@ -64,7 +64,7 @@ header > .container > .content > input::placeholder{
     font-weight: 700;
 }
 
-main > img{
+main > .container > .content > article > img{
     width: 100%;
 }
 
@@ -151,4 +151,32 @@ footer > .container > .content > p{
     font-size: 1.6rem;
     font-weight: 700;
     color: #fcfcfc;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 1219px;
+        margin: 0 auto;
+    }
+
+    header > .container > .content > input{
+        width: 100.8rem;
+    }
+
+    main{
+        margin-top: 4.4rem;
+    }
+
+    main > .container > .content{
+        display: flex;
+        gap:3.4rem
+    }
+
+    main > .container > .content > article{
+        width: 80.4rem;
+    }
+
+    main > .container > .content > section{
+        width: 38.4rem;
+    }
 }
