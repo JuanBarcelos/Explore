@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+
+    background: linear-gradient(45deg, #190361, #bb00ff);
+		animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+
+    display: grid;
+    place-items: center;
+}
+
+main{
+    background-color: #fcfcfc;
+    width: min(42.8rem, 90%);
+    border-radius: .5rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main h1,
+main h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+main p{
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+main > .screen1 > img{
+    width: 30rem;
+    height: auto;
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+main > .screen1 > img:hover{
+    animation: shake 0.5s ease;
+}
+
+main .hidden{
+    transition: transform 0.1s ease-in-out;
+    display: none;
+}
+
+.message{
+    background-color: #E4EDF1;
+    box-shadow: .2rem .2rem  .2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.message p{
+    font-family: "Dancing Script", cursive;
+    font-size: 2.4rem;
+    color: #000;
+    text-align: center;
+    padding: 1rem;
+}
+
+button{
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fcfcfc;
+
+    background-color: #FF9500;
+    border: none;
+
+    padding: 1.6rem;
+
+    border-radius: .4rem;
+
+}
+.screen1,
+.screen2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7rem;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes shake {
+  0%, 100% { transform: translate(0px, 0px) rotate(0deg); }
+  10%, 30%, 50%, 70%, 90% { transform: translate(-5px, 0px) rotate(-5deg); }
+  20%, 40%, 60%, 80% { transform: translate(5px, 0px) rotate(5deg); }
+}
