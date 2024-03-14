@@ -16,5 +16,5 @@ Neste desafio você deverá criar um jogo chamado Biscoito da Sorte, no qual o u
 
 Aqui neste **[link](https://www.figma.com/community/file/1182751789348533739)** você tem acesso ao Figma do projeto**.** Abaixo você pode ver como a aplicação deve ficar:
 
-
 ![Layout do projeto.](./assets/layout.svg "Biscoito da sorte")
+
