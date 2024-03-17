@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Time</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="timer">
+                <div class="time">
+                    <span id="timer">25:00</span>
+                </div>
+                <div class="btns">
+                    <button onclick="startTimer()" class="ph-fill ph-play"></button>
+                    <button onclick="stopTimer()" class="ph-fill ph-stop"></button>
+                    <button onclick="addMinute()" class="ph-bold ph-plus"></button>
+                    <button onclick="subtractMinute()" class="ph-bold ph-minus"></button>
+                </div>
+            </div>
+            <div class="sons">
+                <button onclick="btnCloudSnowAudio()" id="sounds" class=" ph ph-cloud-snow"></button>
+                <button onclick="btnLeafAudio()" id="sounds1" class=" ph ph-leaf"></button>
+                <button onclick="" id="sounds2" class=" ph ph-storefront"></button>
+                <button onclick="" id="sounds3" class=" ph ph-fire"></button
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

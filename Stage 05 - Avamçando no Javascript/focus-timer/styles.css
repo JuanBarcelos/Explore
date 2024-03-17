@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+    --body-background: #ECE5E0;
+    --btn-background-disabled:#DBDBDD;
+    --btn-background-active:#02799D;
+    --icon-color-disabled:#323238;
+    --icon-color-active:#fcfcfc;
+    --text-color:#323238;
+}
+
+body{
+    background-color: var(--body-background);
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    row-gap: 6.4rem;
+    place-content: center;
+}
+
+span{
+    font-size: 12.6rem;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.btns > button{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    border: 3px solid #323238;
+    font-size: 2.5rem;
+}
+
+.sons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3.2rem;
+    column-gap: 3.2rem;
+    
+}
+
+.sons button{
+    width: 13.8rem;
+    height: 15.2rem;
+    border-radius: 2.4rem;
+    background-color: var(--btn-background-disabled);
+    border: none;
+    color: var(--icon-color-disabled);
+    font-size: 5.6rem;
+}
+
+.sons button.active{
+    background-color: var(--btn-background-active);
+    color: var(--icon-color-active);
+}
+
+@media (min-width: 900px) {
+    body{
+        display: grid;
+        height: 100vh;
+        place-content: center;
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 0;
+        column-gap: 12.9rem;
+    }
+
+
+}
+
